@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Walk</title>
+		<link rel="stylesheet" href="styles/style.css"/>
+	</head>
+	<body onload="Engine.init();">
+		<div id="main_div">
+			<div id="params">
+				<h1>Hero</h1>
+				<p>Move speed :</p>
+				<input type="range" oninput="Hero.set_move_speed(this.value)" min="0" max="20" value="5"/>
+				<p>Animation speed :</p>
+				<input type="range" oninput="Hero.set_animation_speed(this.value)" min="1" max="20" value="15"/>
+			</div>
+			<canvas id="scene"></canvas>
+		</div>
+		<script type="text/javascript" src="scripts/index.js"></script>
+		<script type="text/javascript" src="scripts/engine.js"></script>
+		<script type="text/javascript" src="scripts/game.js"></script>
+		<script type="text/javascript" src="scripts/hero.js"></script>
+		<script type="text/javascript" src="scripts/inputs.js"></script>
+		<script type="text/javascript" src="scripts/ui.js"></script>
+	</body>
+</html>
